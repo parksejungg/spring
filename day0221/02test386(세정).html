@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01test386l.html</title>
+    <style>
+        *{font-size: 20pt;}
+    </style>
+    <script>
+        var message='',  info='';
+        //문제 1 replace 서울 => seoul로 변경
+        var msg ='서울 구로구 서울하이미디어 서울 화이팅';
+        document.write(msg.replace('서울','seoul'),'<br>');  //동일문자 한단어만 바꿔줌
+        document.write(msg.replaceAll('서울','seoul'),'<br>'); //중복된 동일문자 전체 바꿔줄수있음
+
+        var jumin ="890729-2065913";
+       
+        //문제 2 charAt(숫자) 남자인지,여자인지
+        var gender= jumin.charAt(7);
+        if(gender=='1' || gender=='3'){message='남자';}
+        else if(gender=='2' || gender=='4'){message='여자';}
+        else{message='성별기입 오류입니다';}
+        document.write(message, '<br>');
+
+
+        //문제3 생년월일 substring(시작,끝) substr(시작,끝)
+        document.write('당신의 생일은 ',jumin.substring(2,6),' 입니다','<br>');
+        document.write('당신의 생일은 ',jumin.substr(2,4), ' 입니다');
+
+        //문제4 문자열길이 length
+        var jumin1 ="890729"; //6자릿수
+        var jumin2 ="2065913"; //7자릿수
+        var size1=0, size2=0, size3=0;
+        size1 = jumin1.length;
+        size2 = jumin2.length;
+        if(size1 !=6 ){ 
+        info='주민등록번호 앞자리가 잘못되었습니다';
+        document.write( info, '<br>');
+    }
+        
+        if(size2 !=7){  
+        info='주민등록번호 뒷자리가 잘못되었습니다';
+        document.write( info , '<br>');
+    }
+        
+
+    //참고로 배열의 길이도 length
+     </script>
+</head>
+
+<body>
+    <!-- 386페이지 문자열 설명 -->
+
+</body>
+
+</html>

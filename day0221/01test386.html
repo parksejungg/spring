@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01test386l.html</title>
+    <style>
+        *{font-size: 20pt;}
+    </style>
+    <script>
+        var info='' ,message=''. result=''; //전역변수
+        var str ='abcCTTYkimHI';
+        document.write(str.toLowerCase(), '<br>'); //toLowerCase 소문자로 보여줌
+        var str = 'abcCTTYkimHI';
+        document.write(str.toUpperCase(), '<br>'); // toUpperCase 대문자로 보여줌 
+
+        var str = 'Javascript';
+        document.write(str.indexOf('a'),'<br>'); // indexOf 주어진 값을 첫문자부터 조회하여 나온 a의 문자열값을 보여줌 '1'
+// Javascript  index 문자열 0,1,2,3,4,5,6,7,8,9
+        var str = 'Javascript';
+        document.write(str.lastIndexOf('a'),'<br>')  //lastIndexOf 함수 주어진 값을 마지막문자에서부터 조회하여 Index문자열번호로 나타내어 '3'을 보여줌
+
+        var str = 'Javascript';
+        document.write(str. includes('script'),'<br>'); //includes 함수 주어진 값이 str에 있으면 true값 반환
+
+        var str = 'Javascript';
+        document.write(str. substring(3,9),'<br>');  //substring 함수 값 두개 주어졌을때 문자열 3번부터~9번이전까지 반환 결과=ascrip
+        document.write(str. substring(4),'<br>') //substring 함수 값 하나만주어졌을시에 4번부터 이후 문자반환 결과 =script
+
+        var str ='Javascript';
+        document.write(str. charAt(1),'<br>'); //charAt 함수 값 index 1번의 문자를 보여줌 결과 = a
+
+        var str = 'Javascript';
+        document.write(str.substr(4,5),'<br>'); // substr함수는 index 4번부터 5개의 문자를 반환해줌  결과 = scrip
+
+        var str = 'Javascript_jQery';
+        var division = str.split('_');
+        document.write(division[0]+','+division[1],'<br>'); // split('_')문자를 기준으로 문자열을 분할하여 분할한 문자열을 배열로 만들어주는 역할 결과 =Javascript,jQery
+        
+        var str= 'Javascript';
+        document.write(str.replace('Java','jQery'),'<br>'); //replace 'java'로 잡은 문자를 'jQery'로 변경해줌 결과 =jQeryscript
+
+        var str1= 'java';
+        var str2= 'script';
+        document.write(str1.concat(str2),'<br>'); // concat str1과 str2를 연결해줌 결과 = javascript
+
+        var str = ' Javascript ';
+        document.write('web' + str, '<br>');
+        document.write('web' + str.trim(),'<br>');  // trim 문자열의 앞뒤 공백을 제거해줍니다. javascript 의 앞뒤공백을 제거해줌
+                                                // 기본값 : web Javascript 결과값 : webJavascript 
+
+        var msg ='서울 구로구 서울하이미디어 서울 화이팅';
+        document.write(msg.replace('서울','seoul'),'<br>'); //동일문자 한단어만 바꿔줌
+        document.write(msg.replaceAll('서울','seoul'),'<br>'); //중복된 동일문자 전체 바꿔줄수있음
+
+        var jumin ="890729-2065913";
+        //문제 2 charAt(숫자) 남자인지,여자인지
+        
+        var gender= jumin.charAt(7);
+        if(gender=='1' || gender=='3'){message='남자';}
+        else if(gender=='2' || gender=='4'){message='여자';}
+        else{message='성별기입 오류입니다';}
+        document.write(message, '<br>');
+
+
+        //문제3 substring(시작,끝) substr(시작,끝)
+        document.write('당신의 생일은 ',jumin.substring(2,6),' 입니다','<br>');
+        document.write('당신의 생일은 ',jumin.substr(2,4), ' 입니다');
+
+     </script>
+</head>
+
+<body>
+    <!-- 386페이지 문자열 설명 -->
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+02/21
+
+이벤트처리=함수구현기술=함수호출
+호출하는 대상
+ ㄴ <button onclick = "함수이름()">
+ ㄴ <input type= button onclick = "함수이름()">
+ ㄴ <input type= submit onclick = "함수이름()">
+ ㄴ <img onclick = 함수이름()" >
+ ㄴ <body onload="welcome('라일락')" >
+ ㄴ <select onchange = "changePizzaR(value)함수이름">
+ ㄴ <input type= text onkeyup="함수이름()">
+
+
+onclick =  클릭할때 보여짐
+onchange = 선택변경될때 보여짐
+
+
+함수
+ ㄴ내장함수 - 수학,문자,날짜
+ ㄴ 사용자정의 함수
+     function welcome(userid매개인자) { 선언적함수 } 
+     var gname= ' '; 전역변수 //함수블록 밖에서 사용
+     function mynumber( ) { var info=' '; //지역변수 함수블록 내에서 사용 }
+     var my = function( ) { 익명함수 }
+
+
+var name='길동'; 변수
+var age = 27; 변수
+const PI=3.1425;
+function fruits() { var age=31; }
+객체=object=오브젝트=개체=컴포넌트=component
+ var person객체 = { name: '홍길동', age:27; }  
+ 내장객체종류 Number, String, Array배열,Math, Date , RegExp
+
+var jumin= "961103-2876123"
+첫번째 나이,생년월일
+두번째 성별추출,지역 
+문자열 시작번호는 0번째부터 시작 '2'추출
+var gender =jumin.charAt(7);
+if(gender=='1' || gender =='3') {남자출력}
+else if (gender =='2' || gender =='4'){여자출력}
+else {document.write('성별기입이 틀렸습니다');}
+
+-------------------------------------------------------
+Array 배열 
+
+  var sj1 = new Array( 10, 20, 'ace', 'F', 3.1415);    둘다 동일
+       	  var sj2 = [ 10, 20, 'ace', 'F', 3.1415];
+        document.write(sj1[3],'<br>');    문자는 0번부터 시작해서 3일때 결과 ='F'
+        document.write(sj2[4],'<br>');    결과 = 3.1415
+
+숫자%4 나머지구함 0 1 2 3
+
+0%4===> 0
+1%4===> 나머지 1
+2%4===> 나머지 2
+3%4 == > 나머지 3
+4%4===> 나머지 0 
+
+
+ 
+C:\Mtest\workhtml\agency
+
+1번째 깃저장소 repository 생성
+https://github.com/parksejungg/spring.git
